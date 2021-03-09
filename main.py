@@ -62,3 +62,29 @@ kw_valeurs = {'b':1}
 res = somme(*valeurs, **kw_valeurs)
 
 print(res)
+
+### Question 3 ###
+
+def fonctbis(a,b):
+  print(a,b)
+  return a,b
+
+fonctbis(*valeurs,**kw_valeurs)
+
+val = 1,
+lav = 3,
+alv = 5,
+
+fonct(*val,*lav,*alv)
+
+valbis = {'a': 2}
+lavbis = {'b': 4}
+alvbis = {'c': 6}
+
+fonct(**valbis,**lavbis,**alvbis)
+fonct(*val,*lav,**alvbis)
+fonct(*val,**lavbis,*alv)
+fonct(**valbis,*lav,*alv)
+
+### Question 3.1 ###
+
