@@ -132,10 +132,22 @@ append_chaine()
 
 ### Question 5 ###
 
+liste = [1,2,3]
+
 def append_chaine(maliste=[],b=0):
+  if maliste == []:
+    maliste=[]
+  
   maliste.append(str(b))
   print(maliste)
 
 append_chaine()
 append_chaine()
 append_chaine()
+# Plus d'effet de bord 
+
+append_chaine(liste,4)
+append_chaine(liste,5)
+append_chaine(liste,6)
+# Ici ce n'est pas gênant sur une liste non nul
+
