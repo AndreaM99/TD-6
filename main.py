@@ -26,7 +26,9 @@ fonct(1,2, c=4) # là ça marche, car on sait où mettre tous les chiffres..
 ### Question 2 ###
 
 fonct(a=1,b=2,c=3)
-fonct(2,2,c=3)
+# fonct(a=1,b=2,3)
+# Ne marche pas, car l'ordinateur est perdue en quelque sorte dans l'affectation..
+fonct(2,b=2,c=3)
 fonct(b=1,a=2,c=3)
 
 print("---------")
