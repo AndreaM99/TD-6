@@ -83,8 +83,59 @@ alvbis = {'c': 6}
 
 fonct(**valbis,**lavbis,**alvbis)
 fonct(*val,*lav,**alvbis)
-fonct(*val,**lavbis,*alv)
-fonct(**valbis,*lav,*alv)
+# fonct(*val,**lavbis,*alv)
+# fonct(**valbis,*lav,*alv)
+# Ne marche pas
 
 ### Question 3.1 ###
 
+valeurs = [[2,3], [3,3]]
+
+x = [i**j for i,j in valeurs]
+print(x)
+
+y = [puissance(*v) for v in valeurs]
+print(y)
+
+print(*valeurs) # --> [2,3] [3,3] donc deux listes donc nos deux arguments a et b ;)
+
+print('---------')
+
+def fonction_double(valeur = 0):
+  return valeur * 2
+
+fonction_double() # est valide
+fonction_double(2)
+m = fonction_double(valeur=4)
+print(m)
+
+print(1,2,3)
+print(1,2,3, sep='_')
+
+maliste = []
+maliste.append(4) # rajoute le chiffre 4 /!\
+print(maliste)
+
+### Question 4 ###
+
+maliste = []
+
+def append_chaine(maliste=[],b=0):
+  maliste.append(str(b))
+  print(maliste)
+
+append_chaine()
+append_chaine()
+append_chaine()
+
+# Là il y a un effet de bord, puisque quand on execute plusieurs fois on a pas la meme chose !
+
+### Question 5 ###
+
+def append_chaine(maliste=[],b=0):
+  maliste.append(str(b))
+  print(maliste)
+
+append_chaine()
+append_chaine()
+append_chaine()
