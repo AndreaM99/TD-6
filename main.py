@@ -1,3 +1,6 @@
+# * transforme un objet en listes
+# ** permet de faire une double lecture
+
 def puissance(a, b):
   return a ** b
 
